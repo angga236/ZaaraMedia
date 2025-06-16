@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zaara Media</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Vesper+Libre&display=swap" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="../css/menu.css" />
+    <link media="all" rel="stylesheet" href="../css/product.css" />
+    <link media="all" rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body style="background-color: rgb(152, 206, 223);">
+    
+    <header>
+      <div class="header-wrap">
+        <div class="mobile-nav" onclick="toggleNav()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <a href="/" class="logo-link">
+            <img src="../picture/Logo.png" alt="Zaara Media" />
+            <span class="logo-text">Zaara Media</span>
+          </a>
+        </div>
+        <nav id="main-nav">
+          <div class="nav-wrap">
+            <a href="./index.html">Beranda</a>
+            <a href="./products.html" class="active">Produk</a>
+            <a href="./about-us.html">Profil</a>
+            <a href="./contact-us.html">Saran dan Masukan</a>
+          </div>
+        </nav>
+        <div class="cta-button">
+            <a href="./daftar-member.html" class="btn-highlight">Gabung Member Zaara</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <h2 class="title">Etalase Produk</h2>
+
+        <div class="menu-wrap">
+          <div class="category-filters">
+            <button class="category-btn active" data-category="all">Semua Produk</button>
+            <button class="category-btn" data-category="Kitab">Kitab</button>
+            <button class="category-btn" data-category="Al-quran">Al-Qur'an</button>
+            <button class="category-btn" data-category="Kurma">Kurma</button>
+            <button class="category-btn" data-category="Siwak">Siwak</button>
+          </div>
+
+          <div class="overlay" onclick="closePopup()"></div>
+          <div class="popup"></div>
+          <div class="menu-list">
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/aqida-removebg-preview.png" />
+                </div>
+                <h3>Aqidatul Awam</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/ghya-removebg-preview.png" />
+                </div>
+                <h3>Ghayatul Ihsan</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 19.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/tklim-removebg-preview.png" />
+                </div>
+                <h3>Ta'lim Muta'allim</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 19.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/nurud-removebg-preview.png" />
+                </div>
+                <h3>Nurudz Dzholam</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 11.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/usfuriyah-removebg-preview.png" />
+                </div>
+                <h3>Usfuriyah</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 21.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/fatul_muin-removebg-preview.png" />
+                </div>
+                <h3>Fathul Muin</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 22.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/fatul_qorib-removebg-preview.png" />
+                </div>
+                <h3>Fathul Qarib</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/tafsir_jalain-removebg-preview.png" />
+                </div>
+                <h3>Tafsir Al-jalalain</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 14.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/sulam_taufiq-removebg-preview.png" />
+                </div>
+                <h3>Sulam Taufiq</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 20.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/sittin-removebg-preview.png" />
+                </div>
+                <h3>Sittin Masalah</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/jurumiyah-removebg-preview.png" />
+                </div>
+                <h3>Al-Jurumiyah</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/tijan_dirori-removebg-preview.png" />
+                </div>
+                <h3>Tijan Darori</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/imriti-removebg-preview.png" />
+                </div>
+                <h3>Al-imrithi</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_fiyah-removebg-preview.png" />
+                </div>
+                <h3>Al-fiyah</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/durotun-removebg-preview.png" />
+                </div>
+                <h3>Durrotun Nashihin</h3>
+                <p class="category">Kitab</p>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_hufaz-removebg-preview.png" />
+                </div>
+                <h3>Al-Hufaz</h3>
+                <p class="category">Al-quran</p>
+                <div class="price">Rp 86.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/alqur-removebg-preview.png" />
+                </div>
+                <h3>Al-Qiro'ah</h3>
+                <p class="category">Al-quran</p>
+                <div class="price">Rp 55.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_quran_hadi-removebg-preview.png" />
+                </div>
+                <h3>Al-Hadi</h3>
+                <p class="category">Al-quran</p>
+                <div class="price">Rp 50.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/assyifa-removebg-preview.png" />
+                </div>
+                <h3>Asy-Syifa</h3>
+                <p class="category">Al-quran</p>
+                <div class="price">Rp 65.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/mugni-removebg-preview.png " />
+                </div>
+                <h3>Al-Mugni</h3>
+                <p class="category">Al-quran</p>
+                <div class="price">Rp 63.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/Kurma-Ajwa-removebg-preview.png" />
+                </div>
+                <h3>Kurma Ajwa</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 110.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/kurma_mazafati-removebg-preview.png" />
+                </div>
+                <h3>Kurma Mazafati</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 30.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                    <img src="../Gambar/kurma_safawi-removebg-preview.png" />
+                </div>
+                <h3>Kurma Safawi</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 35.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/sukari-removebg-preview.png" />
+                </div>
+                <h3>Kurma Sukari</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 37.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                <img src="../Gambar/medjool-removebg-preview.png" />
+                </div>
+                <h3>Kurma Medjool</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 25.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/khalas-removebg-preview.png" />
+                </div>
+                <h3>Kurma Khalas</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 38.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                    <img src="../Gambar/kurma_madu-removebg-preview.png" />
+                </div>
+                <h3>Kurma Madu</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 40.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/tunisia-removebg-preview.png" />
+                </div>
+                <h3>Kurma Tunisia</h3>
+                <p class="category">Kurma</p>
+                <div class="price">Rp 45.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/siwak_al_noor-removebg-preview.png" />
+                </div>
+                <h3>Al-Noor</h3>
+                <p class="category">Siwak</p>
+                <div class="price">Rp 10.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_fazal-removebg-preview.png" />
+                </div>
+                <h3>Al-Fazal</h3>
+                <p class="category">Siwak</p>
+                <div class="price">Rp 11.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_khair-removebg-preview.png" />
+                </div>
+                <h3>Al-Khair</h3>
+                <p class="category">Siwak</p>
+                <div class="price">Rp 10.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_haramain-removebg-preview.png" />
+                </div>
+                <h3>Al-Haramain</h3>
+                <p class="category">Siwak</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/sunah-removebg-preview.png" />
+                </div>
+                <h3>Us-Sunnah</h3>
+                <p class="category">Siwak</p>
+                <div class="price">Rp 12.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_mubarok-removebg-preview.png" />
+                </div>
+                <h3>Al-Mubarok</h3>
+                <p class="category">Siwak</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="../Gambar/al_hijazi-removebg-preview.png" />
+                </div>
+                <h3>Al-Hijazi</h3>
+                <p class="category">Siwak</p>
+                <div class="price">Rp 11.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Zaara Media. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+      // Category filtering functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const products = document.querySelectorAll('.product');
+
+        categoryButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const selectedCategory = button.getAttribute('data-category');
+
+            products.forEach(product => {
+              const productCategory = product.querySelector('.category').textContent;
+              
+              if (selectedCategory === 'all' || productCategory === selectedCategory) {
+                product.style.display = 'grid';
+                product.style.animation = 'fadeIn 0.5s ease forwards';
+              } else {
+                product.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+
+      // Add fade-in animation
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `;
+      document.head.appendChild(style);
+    </script>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/all.js"></script>
+  </body>
+</html>

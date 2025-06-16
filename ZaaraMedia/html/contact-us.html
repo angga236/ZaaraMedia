@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zaara Media - Saran dan Masukan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Vesper+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/contact-us.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrap">
+      <div class="logo">
+        <a href="/" class="logo-link">
+          <img src="../picture/Logo.png" alt="Zaara Media" />
+          <span class="logo-text">Zaara Media</span>
+        </a>
+      </div>
+      <nav id="main-nav">
+        <div class="nav-wrap">
+          <a href="./index.html">Beranda</a>
+          <a href="./products.html">Produk</a>
+          <a href="./about-us.html">Profil</a>
+          <a href="./contact-us.html" class="active">Saran dan Masukan</a>
+        </div>
+      </nav>
+      <div class="cta-button">
+        <a href="./daftar-member.html" class="btn-highlight">Gabung Member Zaara</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="contact">
+        <div class="form">
+          <form action="https://formspree.io/f/xdkgbwzj" method="POST" class="contact-form">
+          <div class="name">
+            <label>Nama</label>
+            <input name="name" placeholder="Masukkan Nama Anda" required />
+          </div>
+          <div class="email">
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Masukkan Email Anda" required />
+          </div>
+          <div class="msg">
+            <label>Pesan</label>
+            <textarea name="message" placeholder="Tulis pesan anda di sini" required></textarea>
+          </div>
+          <button type="submit" class="submit">Kirim</button>
+          </form>
+        </div>
+        <div class="contact-image">
+          <img src="../picture/picContact.jpg" alt="Contact Image" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = this;
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          Swal.fire({
+            title: 'Terima Kasih!',
+            text: 'Saran dan Masukan Anda berhasil dikirim.',
+            icon: 'success',
+            confirmButtonColor: '#a8d0e6',
+            background: '#fff0f5',
+            customClass: {
+              popup: 'swal2-cute-popup',
+              title: 'swal2-cute-title',
+              content: 'swal2-cute-content'
+            }
+          });
+          form.reset();
+        } else {
+          Swal.fire({
+            title: 'Gagal',
+            text: 'Maaf, terjadi kesalahan saat mengirim. Coba lagi nanti.',
+            icon: 'error'
+          });
+        }
+      });
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Zaara Media. Seluruh hak cipta dilindungi.</p>
+  </footer>
+</body>
+</html>

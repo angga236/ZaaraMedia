@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaara Media - Al-Qur'an, Kitab Islam, Kurma & Siwak</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Vesper+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<header>
+  <div class="header-wrap">
+    <div class="mobile-nav" onclick="toggleNav()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="logo">
+      <a href="/" class="logo-link">
+        <img src="../picture/Logo.png" alt="Zaara Media" />
+        <span class="logo-text">Zaara Media</span>
+      </a>
+    </div>
+    <nav id="main-nav">
+      <div class="nav-wrap">
+        <a href="./index.html" class="active">Beranda</a>
+        <a href="./products.html">Produk</a>
+        <a href="./about-us.html">Profil</a>
+        <a href="./contact-us.html">Saran dan Masukan</a>
+      </div>
+    </nav>
+    <div class="cta-button">
+        <a href="./daftar-member.html" class="btn-highlight">Gabung Member Zaara</a>
+    </div>
+  </div>
+</header>
+
+<body>
+  <!-- Slider Section -->
+  <section id="main-slider">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" style="background-image: url('../picture/bnr1.jpg')"></div>
+      </div>
+      <div class="slides">
+        <div class="slide" style="background-image: url('../picture/bnr2.jpg')"></div>
+      </div>
+      <div class="slides">
+        <div class="slide" style="background-image: url('../picture/bnr3.jpg')"></div>
+      </div>
+      <div class="slides">
+        <div class="slide" style="background-image: url('../picture/bnr4.jpg')"></div>
+      </div>
+      <div class="slides">
+        <div class="slide" style="background-image: url('../picture/bnr5.jpg')"></div>
+      </div>
+
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Floating Social Buttons -->
+  <div class="social-floating">
+    <a href="https://instagram.com/zaaramedia" target="_blank" class="social-btn instagram" title="Instagram">
+      <img src="../picture/instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://id.shp.ee/s9Xhkqi" target="_blank" class="social-btn shopee" title="Shopee">
+      <img src="../picture/shopee.png" alt="Shopee" />
+    </a>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="text">
+      <h2>Selamat Datang di Zaara Media</h2>
+      <p class="desc">Sahabat Anda dalam Kebaikan</p>
+      <button class="button" onclick="checkGiveaway()">Cek Periode Giveaway</button>
+    </div>
+  </section>
+
+  <!-- Giveaway Modal -->
+  <div id="giveawayModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <div id="giveawayContent">
+        <!-- Content will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Layanan Section -->
+  <section class="layanan">
+    <h2 class="judul-layanan">Layanan Kami</h2>
+    <div class="kotak-layanan">
+      <div class="kotak">
+        <h3>Konsultasi Produk</h3>
+        <p>Kami siap membantu Anda memilih produk Islami yang sesuai dengan kebutuhan Anda.</p>
+      </div>
+      <div class="kotak">
+        <h3>Kado Islami</h3>
+        <p>Layanan pengemasan produk sebagai hadiah untuk orang tersayang.</p>
+      </div>
+      <div class="kotak">
+        <h3>Paket Acara</h3>
+        <p>Paket khusus untuk masjid, TPQ, dan kegiatan dakwah.</p>
+      </div>
+      <div class="kotak">
+        <h3>Poin Belanja Member</h3>
+        <p>Kumpulkan poin dari setiap pembelian dengan Card Member, tukarkan dengan diskon atau hadiah menarik.</p>
+      </div>
+      <div class="kotak">
+        <h3>Paket Bingkisan Ramadhan</h3>
+        <p>Isi paket Ramadhan berisi Al-Qur'an, kurma, siwak, dan buku Islami, cocok untuk sedekah atau hadiah.</p>
+      </div>
+      <div class="kotak">
+        <h3>Giveaway Produk Islami</h3>
+        <p>Program rutin giveaway produk Islami untuk memperkenalkan dan membagikan kebaikan kepada masyarakat.</p>
+      </div>
+    </div>
+  </section>
+
+   <section class="testimonial">
+    <h2 class="judul-testimonial">Gallery Zaara Media</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <div class="quote-icon">❝</div>
+        <section class="gallery">
+          <div class="photo-card">
+            <div class="gallery-photo">
+              <img src="../picture/gallery.jpg" class="gallery-row">
+              <img src="../picture/gallery2.jpg" class="bulat">
+              <img src="../picture/gallery1.jpg" class="bulat">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial">
+    <h2 class="judul-testimonial">Review Pelanggan</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <div class="quote-icon">❝</div>
+        <p class="testimony">"Alhamdulillah, Al-Qur'an yang saya beli kualitasnya sangat bagus. Pengirimannya cepat dan dikemas dengan aman."</p>
+        <div class="customer-info">
+          <h4>Revy Mariska Putri</h4>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon">❝</div>
+        <p class="testimony">"Kurma yang dijual fresh dan enak. Pelayanannya ramah, recommended banget untuk belanja di sini!"</p>
+        <div class="customer-info">
+          <h4>Angga Ilham</h4>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon">❝</div>
+        <p class="testimony">"Suka banget sama paket bingkisan Ramadhannya. Packaging cantik dan isinya lengkap. Cocok buat hadiah keluarga."</p>
+        <div class="customer-info">
+          <h4>Aisyah Currents</h4>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sharing Experience Section -->
+  <section class="sharing-section">
+    <h2 class="judul-sharing">Bagikan Aktivitasmu</h2>
+    <div class="sharing-container">
+      <form id="postForm" onsubmit="submitPost(event)">
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+        </div>
+        <div class="form-group">
+          <label for="postContent">Apa yang ingin kamu bagikan?</label>
+          <textarea id="postContent" name="postContent" required placeholder="Bagikan aktivitas atau pengalamanmu dengan Zaara Media..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="postImage">Tambah Foto (Opsional):</label>
+          <input type="file" id="postImage" name="postImage" accept="image/*">
+        </div>
+        <button type="submit" class="submit-btn">Bagikan</button>
+      </form>
+
+      <div id="postsList" class="posts-list">
+        <!-- Posts will be displayed here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zaara Media. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slidesContainer = document.querySelector('.slides');
+    
+    // Initialize the slider
+    function initSlider() {
+      slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${index * 100}%)`;
+      });
+    }
+    
+    function changeSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      
+      slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
+      });
+    }
+    
+    // Auto slide every 5 seconds
+    function autoSlide() {
+      changeSlide(1);
+    }
+    
+    // Initialize the slider
+    initSlider();
+    
+    // Start auto sliding
+    let slideInterval = setInterval(autoSlide, 5000);
+    
+    // Pause auto sliding when hovering over the slider
+    document.querySelector('.slider').addEventListener('mouseenter', () => {
+      clearInterval(slideInterval);
+    });
+    
+    // Resume auto sliding when mouse leaves the slider
+    document.querySelector('.slider').addEventListener('mouseleave', () => {
+      slideInterval = setInterval(autoSlide, 5000);
+    });
+
+    // Giveaway Modal Functions
+    function checkGiveaway() {
+      const modal = document.getElementById('giveawayModal');
+      const content = document.getElementById('giveawayContent');
+      
+      // This is where you would typically check if there's an active giveaway
+      // For now, we'll use a sample condition
+      const hasActiveGiveaway = true; // Change this to true to test the giveaway content
+      
+      if (hasActiveGiveaway) {
+        content.innerHTML = `
+          <h2>🎉 Giveaway Aktif! 🎉</h2>
+          <div class="giveaway-info">
+            <h3>Hadiah: Al-Qur'an Premium</h3>
+            <p>Periode: 1 - 30 Juni 2025</p>
+            <p>Persyaratan:</p>
+            <ul>
+              <li>Follow Instagram @zaaramedia</li>
+              <li>Like dan share post giveaway</li>
+              <li>Tag 3 teman di kolom komentar</li>
+            </ul>
+            <p>Pemenang akan diumumkan pada 1 Juli 2025</p>
+          </div>
+        `;
+      } else {
+        content.innerHTML = `
+          <h2>😊 Belum Ada Giveaway</h2>
+          <p>Mohon maaf, saat ini belum ada giveaway yang sedang berlangsung.</p>
+          <p>Ikuti terus akun Instagram kami @zaaramedia untuk mendapatkan informasi giveaway selanjutnya!</p>
+        `;
+      }
+      
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('giveawayModal');
+      modal.style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      const modal = document.getElementById('giveawayModal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // Store posts in an array
+    let posts = [];
+
+    // Function to get liked posts from localStorage
+    function getLikedPosts() {
+      const likedPosts = localStorage.getItem('likedPosts');
+      return likedPosts ? JSON.parse(likedPosts) : [];
+    }
+
+    // Function to save liked posts to localStorage
+    function saveLikedPosts(likedPosts) {
+      localStorage.setItem('likedPosts', JSON.stringify(likedPosts));
+    }
+
+    // Like/Unlike post
+    function likePost(postId) {
+      const likedPosts = getLikedPosts();
+      const post = posts.find(p => p.id === postId);
+      
+      if (post) {
+        if (likedPosts.includes(postId)) {
+          // Unlike
+          post.likes--;
+          const index = likedPosts.indexOf(postId);
+          likedPosts.splice(index, 1);
+        } else {
+          // Like
+          post.likes++;
+          likedPosts.push(postId);
+        }
+        saveLikedPosts(likedPosts);
+        updatePostsDisplay();
+      }
+    }
+
+    // Submit post
+    function submitPost(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const content = document.getElementById('postContent').value;
+      const imageFile = document.getElementById('postImage').files[0];
+      
+      const newPost = {
+        id: Date.now(),
+        name: name,
+        content: content,
+        image: imageFile ? URL.createObjectURL(imageFile) : null,
+        date: new Date(),
+        likes: 0,
+        comments: []
+      };
+
+      posts.unshift(newPost);
+      updatePostsDisplay();
+      
+      // Reset form
+      document.getElementById('postForm').reset();
+    }
+
+    // Add comment to post
+    function addComment(postId) {
+      const commentText = document.getElementById(`comment-${postId}`).value;
+      if (!commentText.trim()) return;
+
+      const post = posts.find(p => p.id === postId);
+      if (post) {
+        post.comments.push({
+          id: Date.now(),
+          text: commentText,
+          date: new Date()
+        });
+        updatePostsDisplay();
+        document.getElementById(`comment-${postId}`).value = '';
+      }
+    }
+
+    // Update posts display
+    function updatePostsDisplay() {
+      const postsList = document.getElementById('postsList');
+      const likedPosts = getLikedPosts();
+      
+      if (posts.length === 0) {
+        postsList.innerHTML = `
+          <div class="no-posts">
+            <p>Belum ada aktivitas yang dibagikan.</p>
+          </div>
+        `;
+      } else {
+        postsList.innerHTML = posts.map(post => `
+          <div class="post-card" data-id="${post.id}">
+            <div class="post-header">
+              <div class="post-user">
+                <div class="user-avatar">${post.name.charAt(0).toUpperCase()}</div>
+                <div class="user-info">
+                  <span class="user-name">${post.name}</span>
+                  <span class="post-date">${post.date.toLocaleDateString('id-ID', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  })}</span>
+                </div>
+              </div>
+            </div>
+            <div class="post-content">
+              <p>${post.content}</p>
+              ${post.image ? `<img src="${post.image}" alt="Post image" class="post-image">` : ''}
+            </div>
+            <div class="post-actions">
+              <button onclick="likePost(${post.id})" class="action-btn like-btn ${likedPosts.includes(post.id) ? 'liked' : ''}">
+                <span class="like-icon">${likedPosts.includes(post.id) ? '❤️' : '🤍'}</span>
+                <span class="like-count">${post.likes}</span>
+              </button>
+              <button class="action-btn comment-btn" onclick="document.getElementById('comment-${post.id}').focus()">
+                <span class="comment-icon">💬</span>
+                <span class="comment-count">${post.comments.length}</span>
+              </button>
+            </div>
+            <div class="comments-section">
+              <div class="comments-list">
+                ${post.comments.map(comment => `
+                  <div class="comment">
+                    <div class="comment-header">
+                      <span class="comment-date">${comment.date.toLocaleDateString('id-ID', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      })}</span>
+                    </div>
+                    <p>${comment.text}</p>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="comment-form">
+                <input type="text" id="comment-${post.id}" placeholder="Tulis komentar..." class="comment-input">
+                <button onclick="addComment(${post.id})" class="comment-submit">Kirim</button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    // Initialize with some sample posts
+    posts = [
+      {
+        id: 1,
+        name: "Ahmad Rizki",
+        content: "Baru saja membeli Al-Qur'an premium dari Zaara Media. Kualitasnya sangat bagus dan pengiriman cepat!",
+        date: new Date(2024, 2, 15, 14, 30),
+        likes: 5,
+        comments: [
+          {
+            id: 1,
+            text: "Wah, keren! Saya juga mau beli nih.",
+            date: new Date(2024, 2, 15, 15, 0)
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: "Siti Nurhaliza",
+        content: "Paket bingkisan Ramadhan dari Zaara Media sudah sampai. Isinya lengkap dan packagingnya cantik!",
+        date: new Date(2024, 2, 14, 10, 15),
+        likes: 8,
+        comments: []
+      }
+    ];
+
+    // Initial display
+    updatePostsDisplay();
+  </script>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById('main-nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
